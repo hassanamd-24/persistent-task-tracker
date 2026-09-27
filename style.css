@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #11111b);
+    color: white;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+    height: auto;
+    /* This forces the input-group and the list to stack vertically */
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #252538;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 0.75rem;
+}
+.input-group{
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+    display: flex;
+    gap: 0.5rem;
+}
+.input-group input{
+    flex: 1;
+    padding: 0.75rem 1rem;
+    background: #1e1e2f;
+    border: 1px solid #3f3f5a;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    
+}
+.input-group input:focus {
+    border-color: #7952b3;
+}
+
+.input-group button {
+    padding: 0.75rem 0.5rem;
+    background: #7952b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+.input-group button:hover {
+    background: #613d96;
+}
+.input-group button:active {
+    transform: scale(0.97);
+}
+
+#tasklist {
+    width: 100%;
+    list-style: none; /* Removes the default bullet points */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+#tasklist li {
+    padding: 0.6rem 1rem;
+    background: #2d2d44;
+    border-left: 4px solid #7952b3;
+    border-radius: 6px;
+    color: #e2e2e9;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    /* Flex layout layout pushes the text left and button right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+}
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+.delete-btn:hover {
+    background: #cc3333;
+}
+
+.delete-btn:active{
+    transform: scale(0.97);
+}
+#clear{
+    background: #cc3333;
+}
+#clear:hover{
+    background: #ac2b2b;
+}
