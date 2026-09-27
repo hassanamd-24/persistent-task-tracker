@@ -183,6 +183,7 @@ body {
 
 #tasklist li:hover {
   background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
 }
 
 .delete-btn { 
@@ -221,5 +222,9 @@ body {
   
   .input-group input {
     grid-column: span 2; 
+  }
+  
+  #tasklist li:hover {
+    transform: none; /* Disables lifting animation on mobile touch displays */
   }
 }
